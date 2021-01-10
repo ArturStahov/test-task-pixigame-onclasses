@@ -5,7 +5,7 @@ class Loader {
 
     static loadAllTextures(callback) {
         const loaders = new PIXI.Loader();
-        loaders.add('../assets/assets.json')
+        loaders.add('./assets/assets.json')
         loaders.load(() => {
             callback();
         });

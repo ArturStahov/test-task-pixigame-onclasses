@@ -9,4 +9,4 @@ use:
 - gsap;
 - pixi-filters;
 
-view : https://arturstahov.github.io/test-task-pixigame-onclasses/
+view : https://arturstahov.github.io/test-task-pixigame-onclasses/index.html
