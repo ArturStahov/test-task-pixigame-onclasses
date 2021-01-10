@@ -65,7 +65,7 @@ class Game {
         this.gameScene = new GameScene(gameItemsArr);
         const gameSceneContainer = this.gameScene.getGameSceneContainer();
 
-        //add button Play
+        //initialize button Play
         this.buttonPlay = new ButtonPlay();
         const buttonPlayContainer = this.buttonPlay.getButtonPlayContainer();
         buttonPlayContainer.position.set(app.screen.width - 130, app.screen.height / 2);
@@ -73,7 +73,7 @@ class Game {
         buttonPlayContainer.on('pointerdown', this.handlerClickPlay.bind(this));
         gameSceneContainer.addChild(buttonPlayContainer);
 
-        //add creditsPanel
+        //initialize creditsPanel
         this.creditsPanel = new CreditsPanel(gameProperty.credits, gameProperty.winSalary);
         const creditsPanelContainer = this.creditsPanel.getCreditsPanelContainer();
         creditsPanelContainer.x = app.screen.width - 135;
@@ -103,7 +103,7 @@ class Game {
         this.gameScene.generateRandomArea();
 
 
-        // app.stage.addChild(this.loadingScene);
+       
         app.stage.addChild(gameSceneContainer);
         app.stage.addChild(winSceneContainer);
         app.stage.addChild(gameOverSceneContainer);
